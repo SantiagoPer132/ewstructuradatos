@@ -1,22 +1,22 @@
 class Persona2:
-    def __init__(self):
-        self.nombre=input("Ingrese el nombre: ")
-        self.apellidos=input("Ingrese sus apellidos: ")
-        #Comentario
+    def _init_(self):
+        self.nombre=input("ingrese el nombre:")
+        self.apellidos=input("ingrese sus apellidos:")
+    
     def mostrar(self):
         print("Nombre: ", self.nombre)
-        print("Apellidos", self.apellidos)
-        
+        print("Apellidos: ", self.apellidos)
+
 class Alumnos(Persona2):
-    def __init__(self):
-        super().__init__()
-        self.matricula=input("Ingrese la matricula: ")
-        
+    def _init_(self):
+        super()._init_()
+        self.matriula=input("Ingrese la matricula: ")
+
     def mostrarAlumno(self):
         super().mostrar()
-        print("Matricula: ", self.matricula)
-        
+        print("Matricula: ", self.matriula)
+
 #Alumnos=Persona2()
 #Alumnos.mostrar()
 Alumno1=Alumnos()
-Alumno1.mostrarAlumno()
+Alumnos.mostrarAlumno()
